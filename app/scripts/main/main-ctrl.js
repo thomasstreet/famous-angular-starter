@@ -11,6 +11,7 @@ angular.module('famousAngularStarter')
 
     $scope.widthTransitionable = new Transitionable(1);
     $scope.heightTransitionable = new Transitionable(1);
+    $scope.opacityTransitionable = new Transitionable(1);
 
     //let's define our animation's transition
     var transition = {
@@ -18,12 +19,24 @@ angular.module('famousAngularStarter')
       curve: Easing.outBounce
     }
 
+    var opacityTransition = {
+      duration: 500, //ms
+      curve: 'easeOut'
+    }
+
     $scope.clickCenterBox = function(){
       //let's make that background box grow
       var xScale = window.innerWidth / $scope.BG_SIZE[0];
       var yScale = window.innerHeight / $scope.BG_SIZE[1];
       $scope.widthTransitionable.set(xScale, transition);
-      $scope.heightTransitionable.set(yScale, transition);
+      $scope.heightTransitionable.set(yScale, transition, $scope.kickOffOpacityTransition);
+    }
+
+    $scope.kickOffOpacityTransition = function(){
+      $scope.greeting = "Famo.us/Angular"
+      if(!$scope.$$phase)
+        $scope.$apply()
+      $scope.opacityTransitionable.set(0, opacityTransition)
     }
 
 

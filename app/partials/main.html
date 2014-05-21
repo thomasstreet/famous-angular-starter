@@ -11,8 +11,25 @@
     </fa-surface>
   </fa-modifier>
 
+  <!-- Center box inverted -->
+  <fa-modifier id="inverted"
+    fa-translate="[0,0,1]"
+    fa-origin="[.5, .5]" >
+    <fa-surface
+      class="center-box"
+      fa-size="[true, true]"
+      fa-color="'rgb(5,22,48)'"
+      fa-background-color="'rgb(255,255,250)'"
+      fa-click="clickCenterBox()" >
+      {{greeting}}
+    </fa-surface>
+  </fa-modifier>
+
   <!-- Center box -->
-  <fa-modifier fa-translate="[0,0,1]" fa-origin="[.5, .5]">
+  <fa-modifier
+    fa-translate="[0,0,2]"
+    fa-origin="[.5, .5]"
+    fa-opacity="opacityTransitionable" >
     <fa-surface
       class="center-box"
       fa-size="[true, true]"
@@ -22,5 +39,9 @@
       {{greeting}}
     </fa-surface>
   </fa-modifier>
+
+
+  
+
 
 </fa-app>
