@@ -15,6 +15,7 @@
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/famous-angular/dist/famous-angular.css">
 
     <!-- build:js scripts/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -39,6 +40,7 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -47,6 +49,13 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/requirejs/require.js"></script>
+    <script>
+      //set requirejs's base to where the famous lib folder lives
+      require.config({baseUrl: 'bower_components'});
+    </script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/famous-angular/dist/famous-angular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
