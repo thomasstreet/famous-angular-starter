@@ -6,10 +6,11 @@ angular.module('famousAngularStarter')
 
     $scope.greeting = "Hello, Famo.us";
 
-
+    $scope.widthTransitionable = new Transitionable(20);
+    $scope.heightTransitionable = new Transitionable(20);
 
     $scope.clickCenterBox = function(){
-      alert('ouch')
+      //let's make that background box grow
     }
 
 

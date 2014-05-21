@@ -1,9 +1,12 @@
 <fa-app class="full-screen">
 
   <!-- Background box -->
-  <fa-modifier fa-translate="[0,0,0]" fa-origin="[.5, .5]">
+  <fa-modifier
+    fa-translate="[0,0,0]"
+    fa-origin="[.5, .5]"
+    fa-scale="[widthTransitionable, heightTransitionable]">
     <fa-surface
-      fa-size="[0,0]"
+      fa-size="[20, 10]"
       fa-background-color="'rgb(5,22,48)'">
     </fa-surface>
   </fa-modifier>
@@ -19,5 +22,5 @@
       {{greeting}}
     </fa-surface>
   </fa-modifier>
-  
+
 </fa-app>
