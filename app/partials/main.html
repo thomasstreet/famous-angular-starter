@@ -1,5 +1,15 @@
 <fa-app class="full-screen">
-  <fa-modifier fa-origin="[.5, .5]">
+
+  <!-- Background box -->
+  <fa-modifier fa-translate="[0,0,0]" fa-origin="[.5, .5]">
+    <fa-surface
+      fa-size="[0,0]"
+      fa-background-color="'rgb(5,22,48)'">
+    </fa-surface>
+  </fa-modifier>
+
+  <!-- Center box -->
+  <fa-modifier fa-translate="[0,0,1]" fa-origin="[.5, .5]">
     <fa-surface
       class="center-box"
       fa-size="[true, true]"
@@ -9,4 +19,5 @@
       {{greeting}}
     </fa-surface>
   </fa-modifier>
+  
 </fa-app>
