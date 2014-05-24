@@ -8,11 +8,11 @@ angular.module('famousAngularStarter',
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: "/",
+        url: '/',
         templateUrl: 'partials/main.html',
         controller: 'MainCtrl'
       });
 
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise('/');
   })
 ;
