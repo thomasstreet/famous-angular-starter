@@ -1,6 +1,6 @@
 {
   "name": "famousAngularStarter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "modernizr": "2.6.2",
     "angular": "1.2.x",
