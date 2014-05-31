@@ -1,7 +1,7 @@
 famous-angular-starter
 ======================
 
-Starter repo + walkthrough for Famo.us/Angular
+Starter repo for Famo.us/Angular
 
 The `master` branch is a viable seed project for Famo.us/Angular.
 
@@ -16,7 +16,3 @@ The `master` branch is a viable seed project for Famo.us/Angular.
 #### From then on:
 
 `gulp watch` will start the development server and auto-reload on changes.
-
-
-####Tutorial:
-You can step through the tags numerically (`git checkout 0`, `git checkout 1`, etc.) for a simple tutorial.  The completed tutorial is on branch `develop`
