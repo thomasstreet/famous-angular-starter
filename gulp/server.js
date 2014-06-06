@@ -30,7 +30,7 @@ gulp.task('connect:dist', function () {
     });
 });
 
-gulp.task('serve', ['connect:src', 'styles'], function () {
+gulp.task('serve', ['connect:src', 'styles', 'build'], function () {
   require('opn')('http://localhost:9000');
 });
 

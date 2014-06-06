@@ -1,7 +1,10 @@
 {
   "name": "famousAngularStarter",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-haml": "0.0.8",
+    "gulp-jade": "^0.5.0"
+  },
   "devDependencies": {
     "connect": "^2.14.4",
     "connect-livereload": "^0.4.0",

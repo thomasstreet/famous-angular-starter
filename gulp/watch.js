@@ -11,10 +11,13 @@ gulp.task('watch', ['serve'], function () {
 
     gulp.watch([
         'app/partials/**/*.html',
+        'app/partials/**/*.haml',
+        'app/partials/**/*.jade',
         'app/styles/**/*.css',
         'app/scripts/**/*.js',
         'app/images/**/*'
     ]).on('change', function (file) {
+        gulp.start('build')
         server.changed(file.path);
     });
 
