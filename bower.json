@@ -12,7 +12,7 @@
     "angular-ui-router": "0.2.x",
     "angular-route": "1.2.x",
     "bootstrap-sass-official": "3.1.1",
-    "famous-angular": "0.0.14",
+    "famous-angular": "0.0.16",
     "jquery": "~2.1.1",
     "underscore": "~1.6.0"
   },
