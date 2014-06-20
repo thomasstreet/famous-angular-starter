@@ -34,9 +34,9 @@ gulp.task('partials', function () {
 });
 
 gulp.task('haml', function () {
-  return gulp.src('app/partials/**/*.haml')
-      .pipe($.haml())
-      .pipe(gulp.dest("app/partials"))
+  // return gulp.src('app/partials/**/*.haml')
+  //     .pipe($.haml())
+  //     .pipe(gulp.dest("app/partials"))
 });
 
 gulp.task('jade', function () {
