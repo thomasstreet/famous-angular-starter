@@ -1,3 +1,13 @@
-%fa-app(class="full-screen")
-  %fa-modifier(fa-origin="[.5, .5]")
-    %fa-surface(class="center-box" fa-size="[true, true]" fa-background-color="'rgb(5,22,48)'" fa-color="'rgb(255,255,250)'") {{greeting}} (HAML)
+%fa-app.full-screen
+  / Container modifier, which we're rotating over the y axis
+  %fa-modifier{"fa-origin" => "[.5, .5]", "fa-rotate-y" => "rotateY.get()"}
+    / Front face
+    %fa-surface{"fa-color" => "'rgb(255,255,250)'", "fa-size" => "[true, true]"}
+      %img.logo{src: "images/famous-logo.svg", style: "width: 200px; height: 200px;"}/
+    / Back face:  same image, rotated pi radians
+    %fa-modifier{"fa-rotate-y" => "3.14159"}
+      %fa-surface{"fa-color" => "'rgb(255,255,250)'", "fa-size" => "[true, true]"}
+        %img.logo{src: "images/famous-logo.svg", style: "width: 200px; height: 200px;"}/
+  %fa-modifier{"fa-origin" => "[.5, .9]", "fa-size" => "[200, 100]"}
+    %fa-surface
+      %input{max: "100", min: "10", "ng-model" => "spinner.speed", style: "width: 100%; text-align: center;", type: "range"}/
