@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+.logo {
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
+
 .full-screen {
     position: fixed;
     bottom: 0;

@@ -1,7 +1,25 @@
 <fa-app class="full-screen">
-  <fa-modifier fa-origin="[.5, .5]">
-    <fa-surface class="center-box" fa-size="[true, true]" fa-background-color="'rgb(5,22,48)'" fa-color="'rgb(255,255,250)'">
-      {{greeting}}
+
+  Container modifier, which 
+  <fa-modifier fa-origin="[.5, .5]" fa-rotate-y="rotateY.get()">
+
+    <!-- Front face -->
+    <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
+      <img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;"/>
+    </fa-surface>
+
+    <!-- Back face:  same image, rotated pi radians -->
+    <fa-modifier fa-rotate-y="3.14159">
+      <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
+        <img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;" />
+      </fa-surface>
+    </fa-modifier>
+
+  </fa-modifier>
+
+  <fa-modifier fa-origin="[.5, .9]" fa-size="[200, 100]">
+    <fa-surface>
+      <input style="width: 100%; text-align: center;" type="range" min="10" max="100" ng-model="spinner.speed" />
     </fa-surface>
   </fa-modifier>
 </fa-app>
