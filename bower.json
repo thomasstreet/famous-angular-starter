@@ -1,8 +1,7 @@
 {
   "name": "famousAngularStarter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "modernizr": "2.6.2",
     "angular": "1.2.x",
     "angular-animate": "1.2.x",
     "angular-cookies": "1.2.x",
@@ -13,7 +12,6 @@
     "angular-route": "1.2.x",
     "bootstrap-sass-official": "3.1.1",
     "famous-angular": "0.0.16",
-    "jquery": "~2.1.1",
     "underscore": "~1.6.0"
   },
   "devDependencies": {
