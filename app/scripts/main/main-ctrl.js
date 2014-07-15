@@ -1,19 +1,28 @@
 'use strict';
 
 angular.module('famousAngularStarter')
-  .controller('MainCtrl', function ($scope, $famous) {
+  .controller('MainCtrl', function($scope, $famous){
     var Transitionable = $famous['famous/transitions/Transitionable'];
-    var Timer = $famous['famous/utilities/Timer'];
+    var _size = new Transitionable([100, 100]);
+    var _translate = new Transitionable([0, 0, 1]);
 
-    $scope.spinner = {
-      speed: 55
+    $scope.getSize = function(){
+      return _size.get();
     };
-    $scope.rotateY = new Transitionable(0);
 
-    //run function on every tick of the Famo.us engine
-    Timer.every(function(){
-      var adjustedSpeed = parseFloat($scope.spinner.speed) / 1200;
-      $scope.rotateY.set($scope.rotateY.get() + adjustedSpeed);
-    }, 1);
+    $scope.getTranslate = function(){
+      return _translate.get();
+    };
 
+    $scope.boundContent = "trivial data binding";
+
+
+    //Now actually kick off the animations
+
+    //Famo.us Transitionables are 'tween' objects, pretty much simple variables that
+    //support `get`ing and `set`ing numeric values, with the ability to interpolate `set`
+    //values over time with an optional transition
+    _size.set([300, 300], {duration: 2000, curve: 'easeOut'});
+    _translate.set([200, 200, 1], {duration: 2000, curve: 'easeOut'});
   });
+

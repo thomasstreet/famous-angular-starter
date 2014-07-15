@@ -1,25 +1,11 @@
-<fa-app class="full-screen">
+<div ng-controller="MainCtrl">
+  <div>Normal HTML</div>
 
-  <!-- Container modifier, which we're rotating over the y axis -->
-  <fa-modifier fa-origin="[.5, .5]" fa-rotate-y="rotateY.get()">
-
-    <!-- Front face -->
-    <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
-      <img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;"/>
-    </fa-surface>
-
-    <!-- Back face:  same image, rotated pi radians -->
-    <fa-modifier fa-rotate-y="3.14159">
-      <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
-        <img class="logo" src="images/famous-logo.svg" style="width: 200px; height: 200px;" />
-      </fa-surface>
+  <fa-app style="width: 100%; height: 500px;">
+    <fa-modifier fa-size="getSize()" fa-translate="getTranslate()">
+      <fa-surface fa-background-color="'blanchedalmond'">{{boundContent}} and trivial static content</fa-surface>
     </fa-modifier>
+  </fa-app>
 
-  </fa-modifier>
-
-  <fa-modifier fa-origin="[.5, .9]" fa-size="[200, 100]">
-    <fa-surface>
-      <input style="width: 100%; text-align: center;" type="range" min="10" max="100" ng-model="spinner.speed" />
-    </fa-surface>
-  </fa-modifier>
-</fa-app>
+  <div>More normal HTML</div>
+</div>
