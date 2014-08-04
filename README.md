@@ -24,4 +24,4 @@ You should then be able to open the examples at http://localhost:3000
   3. In your terminal, run `npm install` to install package dependencies, including bower dependencies
   4. In your terminal, from the famous-angular-starter base directory, run `gulp watch`
 
-You should then be able to open the examples at http://localhost:4000.  The page will auto-reload when you make changes to the app.
+You should then be able to open the examples at http://localhost:9000.  The page will auto-reload when you make changes to the app.
