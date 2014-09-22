@@ -1,6 +1,6 @@
 {
   "name": "famousAngularStarter",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "dependencies": {
     "angular": "1.2.22",
     "angular-animate": "1.2.22",
@@ -11,7 +11,7 @@
     "angular-ui-router": "0.2.x",
     "angular-route": "1.2.22",
     "bootstrap-sass-official": "3.1.1",
-    "famous-angular": "0.3.0",
+    "famous-angular": "0.4.0",
     "underscore": "~1.6.0"
   },
   "devDependencies": {
