@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('famousAngularStarter',
-  ['ngAnimate', 'ngCookies',
-    'ngTouch', 'ngSanitize',
-    'ngResource', 'ui.router',
+  ['ui.router',
     'famous.angular' ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider

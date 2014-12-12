@@ -1,7 +1,7 @@
 <fa-app class="full-screen">
 
   <!-- Container modifier, which we're rotating over the y axis -->
-  <fa-modifier fa-origin="[.5, .5]" fa-rotate-y="rotateY.get()">
+  <fa-modifier fa-origin="[.5, .5]" fa-align="[.5, .5]" fa-rotate-y="rotateY.get()">
 
     <!-- Front face -->
     <fa-surface fa-size="[true, true]" fa-color="'rgb(255,255,250)'">
@@ -17,7 +17,7 @@
 
   </fa-modifier>
 
-  <fa-modifier fa-origin="[.5, .9]" fa-size="[200, 100]">
+  <fa-modifier fa-origin="[.5, .9]" fa-align="[.5, .9]" fa-size="[200, 100]">
     <fa-surface>
       <input style="width: 100%; text-align: center;" type="range" min="10" max="100" ng-model="spinner.speed" />
     </fa-surface>
